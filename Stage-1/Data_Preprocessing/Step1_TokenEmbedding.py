@@ -2,9 +2,9 @@
 # MAGIC %md
 # MAGIC | Author  | VAIBHAV SHASHIKANT VAIDYA |
 # MAGIC |---------|---------------------------|
-# MAGIC | Date    | 21-12-2025                |
+# MAGIC | Date    | 01-01-2026                |
 # MAGIC | Version | V1.0                      |
-# MAGIC | Topic   | Text Split and Tokenization |
+# MAGIC | Topic   | Text Split and TokenEmbedding |
 
 # COMMAND ----------
 
@@ -191,7 +191,6 @@ print(preprocessed[:30])
 # COMMAND ----------
 
 print(len(preprocessed))
-
 
 # COMMAND ----------
 
@@ -724,6 +723,10 @@ for i in range(1, context_size+1):
 
 # COMMAND ----------
 
+# MAGIC %pip install torch
+
+# COMMAND ----------
+
 from torch.utils.data import Dataset, DataLoader
 
 
@@ -876,6 +879,14 @@ pos_embedding_layer = torch.nn.Embedding(context_length, output_dim)
 
 pos_embeddings = pos_embedding_layer(torch.arange(max_length))
 print(pos_embeddings.shape)
+
+# COMMAND ----------
+
+token_embeddings
+
+# COMMAND ----------
+
+pos_embeddings
 
 # COMMAND ----------
 
