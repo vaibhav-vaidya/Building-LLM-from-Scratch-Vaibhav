@@ -1,3 +1,5 @@
+NOTE: USE ALL CODE NOTEBOOK IN DATABRICKS, AS IT"S CODED AND DATABRICKS NOTEBOOK TYPE
+
 Building an LLM From Scratch
 
 This repository demonstrates how to build a Large Language Model (LLM) from scratch, covering the complete journey from raw data to an industry-ready model.
